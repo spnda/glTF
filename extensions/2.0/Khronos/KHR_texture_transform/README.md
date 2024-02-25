@@ -34,9 +34,9 @@ uniform float Rotation;
 
 mat3 translation = mat3(1,0,0, 0,1,0, Offset.x, Offset.y, 1);
 mat3 rotation = mat3(
-    cos(Rotation), sin(Rotation), 0,
-   -sin(Rotation), cos(Rotation), 0,
-                0,             0, 1
+    cos(Rotation), -sin(Rotation), 0,
+    sin(Rotation),  cos(Rotation), 0,
+                0,              0, 1
 );
 mat3 scale = mat3(Scale.x,0,0, 0,Scale.y,0, 0,0,1);
 
